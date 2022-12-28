@@ -1,0 +1,113 @@
+<html?>
+    <title>WHAT ABDUL THINK ABOUT YOU?</title>
+
+    <head>
+        <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    </head>
+
+    <body>
+        <div class="container">
+                    <div class="bg">
+                        <h1>WHAT <strong>ABDUL</strong> THINKING ABOUT YOU?</h1>
+                        <br><br>
+                        <a id="myButton" href="#">
+                            Click to know
+                        </a>
+                        <br><br>
+                        <br>
+                        <div class="output" id="myRandomDiv"></div>
+                    </div>
+          </div>
+
+        <script type="text/javascript" charset="utf-8">
+            var randomStrings = [
+                "You are gorgeous.",
+                "You are lovely.",
+                "You do not need makeup. You are already so naturally beautiful.",
+                "You are really cute.",
+                "You look mesmerizing.",
+                "You look dazzling.",
+                "You are elegant.",
+                "You are breathtaking.",
+                "You are very fit.",
+                "You are beautiful.",
+                "You are childish soul.",
+                "I love your eyes",
+                "I love your hands.",
+                "I love your lips.",
+                "You have the most beautiful smile.",
+                "I like your style.",
+                "I like your dress.",
+                "You have the most beautiful, radiant eyes.",
+                "I like your style.",
+                "You really know how to dress well.",
+                "You are so gorgeous and that is the least interesting thing about you.",
+                "You look stunning in that dress.",
+                "You are so kissable.",
+                "I love your curves.",
+                "You are the sweetest.",
+                "I feel so happy here with you.",
+                "There is something about being with you that makes me want to be the best person that I can be.",
+                "You never fail to show me that you care about me. Thank you for that.",
+                "You are the most loveliest person I have been with.",
+                "Nobody in this world makes me happier than you do.",
+                "To me, you are perfect.",
+                "Could you be any cuter?",
+                "I love that I can just be myself when I am with you.",
+                "Could you be any cuter?",
+                "I never have to pretend to be someone else when I am with you.",
+                "Could you be any cuter?",
+                "You are my greatest adventure.",
+                "You are such a good kisser.",
+                "You just take my breath away.",
+                "Whoever is lucky enough to end up with you will never be bored a day in their life.",
+                "You have the softest kisses.",
+                "You are a strong, sensual woman.",
+                "I love every inch of you.",
+                "You are a dream come to life.",
+                "You are my dream come true.",
+                "I feel so much happier talking to you.",
+                "With you in my life, everything just makes sense.",
+                "You fill up an empty space in my heart that I never knew existed.",
+                "You make me feel so full in my heart and in my soul.",
+                "I could listen to you talk for hours and never get tired of it.",
+                "I love how confident you are. It makes me even more attracted to you.",
+                "You smell so nice. haha only you know but i can predict.",
+                "You are always the most beautiful woman in the room.",
+                "You are everything to me.",
+                "You are my whole world.",
+                "You are my entire universe.",
+                "You complete me.",
+                "Being with you means the world to me.",
+                "You are the first thing that I want to wake up to every morning and the last thing I want to see before I fall asleep. I want my days to begin and end with you.",
+                "I cannot keep my eyes off of you.",
+                "You are the best friend that someone could ever ask for.",
+                "You are the very meaning of friendship.",
+                "You are my best friend for life.",
+                "Through thick and thin, I can always count on you to be my friend.",
+                "Thank you for always being there for me. You are a true friend, the best kind of friend that i could ask for.",
+                "Thank you for always being there for me. You are a true friend, the best kind of friend that i could ask for.",
+                "True friends are like diamonds. And you are the most precious diamond of all.",
+                "Thank you for being such a loyal friend in such a messed up world.",
+                "Whenever you feel low just remember someone is there who get happy even just by getting a glimpse of you.",
+                "I love you never forget that...stay happy always and keep growing...working on your future.",
+            ];
+
+
+
+            var randomDiv = document.getElementById("myRandomDiv");
+
+            document.getElementById("myButton").addEventListener("click", function () {
+                randomIndex = Math.ceil((Math.random() * randomStrings.length));
+                newText = randomStrings[randomIndex];
+                randomDiv.innerHTML = newText;
+            });
+
+
+        </script>
+    </body>
+
+    </html>

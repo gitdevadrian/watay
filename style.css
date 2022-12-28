@@ -1,0 +1,72 @@
+body {
+    background: url('bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.bg {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 50px;
+    margin-top: 250px;
+    position: absolute;
+    left: 28%;
+}
+
+@media only screen and (max-width: 990px) {
+    .bg {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 50px;
+        margin-top: 130px;
+        position: absolute;
+        left: 5% !important;
+        right: 5%;
+    }
+}
+
+.container {
+    text-align: center;
+}
+
+.output{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 20px #ac07da;
+
+}
+
+a{
+    font-family: auto;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 24px;
+    color: purple !important;
+}
+#myButton{
+    background: #ac07da;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
