@@ -103,17 +103,82 @@
                 "Thank you for being such a loyal friend in such a messed up world.",
                 "Whenever you feel low just remember someone is there who get happy even just by getting a glimpse of you.",
                 "I love you never forget that...stay happy always and keep growing...working on your future.",
+                "okay google, who is the best and most pretty girl in the world? - Google: This girl here who is reading this😉",
+                "Your laugh is my favorite sound in the whole world.",
+                "You light up the room with your presence.",
+                "Every time I see you, my day gets a whole lot better.",
+                "You have a way of making everything brighter and more beautiful.",
+                "Your intelligence and wit never cease to amaze me.",
+                "You inspire me to be a better person every day.",
+                "Your strength and resilience are truly admirable.",
+                "You have the most captivating eyes I've ever seen.",
+                "Your sense of humor is absolutely infectious.",
+                "I admire your passion and dedication to your dreams.",
+                "You are the epitome of grace and sophistication.",
+                "Your kindness and generosity know no bounds.",
+                "You have the unique ability to see beauty in everything.",
+                "Your creativity and talent are incredibly inspiring.",
+                "You possess a rare combination of wisdom and humility.",
+                "Every moment with you is a treasure.",
+                "You have a heart of gold, and it shines through in all you do.",
+                "Your perspective on life is refreshing and enlightening.",
+                "You are a beacon of positivity and hope.",
+                "I am captivated by your unique blend of sass and class.",
+                "Your courage and bravery are qualities I deeply admire.",
+                "You are not just my sunshine—you're the whole sunrise.",
+                "Your spirit is as free and beautiful as a wildflower.",
+                "You have a voice that could calm the seas.",
+                "Your compassion for others is a rare and beautiful gift.",
+                "I find your curiosity and thirst for knowledge enchanting.",
+                "You have a soul that is deep, vibrant, and full of life.",
+                "You turn the ordinary into extraordinary, just by being you.",
+                "Your presence is a source of joy and peace.",
+                "You are like a melody that lingers in the heart long after the song has ended.",
+                "Are you lost? Babygirl😏",
+                "Your energy is as infectious as your smile.",
+                "I can not stop thinking about you.",
+                "You'll always be my girl.",
+                "Since the day I met you, my life has never been the same.",
+                "I love making you laugh.",
+                "I guess I finally found something i love more than pizza.",
+                "You're cute. Can I keep you forever?",
+                "The best part of me is you.",
+                "There's nothing I don't like about you.",
+                "You make every day better. - Read it one more time get calm and read slowly and feel how amazing person you are.",
+                "I made a wish, and you came true.",
+                "Remeber there is someone is ready to die for you, to bring the moon for you to climb the mountains for you.",
+                "Okay now you can come back to me, and if you like it so send me a picture with your smile and you have click now.",
+                
             ];
 
 
 
-            var randomDiv = document.getElementById("myRandomDiv");
+//            var randomDiv = document.getElementById("myRandomDiv");
 
-            document.getElementById("myButton").addEventListener("click", function () {
-                randomIndex = Math.ceil((Math.random() * randomStrings.length));
-                newText = randomStrings[randomIndex];
-                randomDiv.innerHTML = newText;
-            });
+//            document.getElementById("myButton").addEventListener("click", function () {
+ //               randomIndex = Math.ceil((Math.random() * randomStrings.length));
+ //               newText = randomStrings[randomIndex];
+//                randomDiv.innerHTML = newText;
+//            });
+
+
+var randomDiv = document.getElementById("myRandomDiv");
+
+// Initialize an index variable outside of your event listener
+var currentIndex = 0;
+
+document.getElementById("myButton").addEventListener("click", function () {
+    // Update the text with the current item in the array
+    newText = randomStrings[currentIndex];
+    randomDiv.innerHTML = newText;
+
+    // Increment the index for the next click, and reset if it reaches the end of the array
+    currentIndex++;
+    if (currentIndex >= randomStrings.length) {
+        currentIndex = 0;
+    }
+});
+
 
 
         </script>
