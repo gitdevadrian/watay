@@ -1,4 +1,5 @@
-<html?>
+<html>
+
     <title>WHAT I THINK ABOUT YOU?</title>
 
     <head>
@@ -7,29 +8,29 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1VXQKQJFWX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-1VXQKQJFWX');
-</script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-1VXQKQJFWX"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+        
+          gtag('config', 'G-1VXQKQJFWX');
+        </script>
     </head>
 
     <body>
         <div class="container">
-                    <div class="bg">
-                        <h1>WHAT <strong>I</strong> AM THINKING ABOUT YOU?</h1>
-                        <br><br>
-                        <a id="myButton" href="#">
-                            Click to know
-                        </a>
-                        <br><br>
-                        <br>
-                        <div class="output" id="myRandomDiv"></div>
-                    </div>
-          </div>
+            <div class="bg">
+                <h1>WHAT <strong>I</strong> AM THINKING ABOUT YOU?</h1>
+                <br><br>
+                <a id="myButton" href="#">
+                    Click to know
+                </a>
+                <br><br>
+                <br>
+                <div class="output" id="myRandomDiv"></div>
+            </div>
+        </div>
 
         <script type="text/javascript" charset="utf-8">
             var randomStrings = [
@@ -164,26 +165,23 @@
 //            });
 
 
-var randomDiv = document.getElementById("myRandomDiv");
+            var randomDiv = document.getElementById("myRandomDiv");
 
-// Initialize an index variable outside of your event listener
-var currentIndex = 0;
+            // Initialize an index variable outside of your event listener
+            var currentIndex = 0;
 
-document.getElementById("myButton").addEventListener("click", function () {
-    // Update the text with the current item in the array
-    newText = randomStrings[currentIndex];
-    randomDiv.innerHTML = newText;
-
-    // Increment the index for the next click, and reset if it reaches the end of the array
-    currentIndex++;
-    if (currentIndex >= randomStrings.length) {
-        currentIndex = 0;
-    }
-});
-
-
+            document.getElementById("myButton").addEventListener("click", function () {
+                // Update the text with the current item in the array
+                newText = randomStrings[currentIndex];
+                randomDiv.innerHTML = newText;
+            
+                // Increment the index for the next click, and reset if it reaches the end of the array
+                currentIndex++;
+                if (currentIndex >= randomStrings.length) {
+                    currentIndex = 0;
+                }
+            });
 
         </script>
     </body>
-
-    </html>
+</html>
